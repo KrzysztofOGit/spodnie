@@ -1,13 +1,13 @@
 :root {
-	--main-radius: 5px;
-	--main-padding: 5px;
+	--main-radius: 10px;
+	--main-padding: 10px;
 }
 
 .container {
 	display: grid;
 	height: 100vh;
-	grid-template-columns: 1fr 1fr 1fr ;
-	grid-template-rows: 0.2fr 1.5fr 0.8fr;
+	grid-template-columns: 1fr 1fr 0.5fr ;
+	grid-template-rows: 0.2fr 2fr 0.3fr;
 	grid-template-areas: 
 	"nav nav nav"
 	"main main sidebar"
@@ -47,4 +47,22 @@ footer {
 	grid-area: footer;
 	border-radius: var(--main-radius);
 	padding-top: var(--main-padding);
+}
+
+img {
+	
+	border-radius: var(--main-radius);
+	
+}
+
+.material {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	border-style: solid;
+	border-color: white;
+}
+
+area:hover {
+color:  red;
 }
