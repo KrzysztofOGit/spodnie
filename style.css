@@ -1,0 +1,50 @@
+:root {
+	--main-radius: 5px;
+	--main-padding: 5px;
+}
+
+.container {
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows: 0.2fr 1.5fr 0.8fr;
+	grid-template-areas: 
+	"nav nav nav"
+	"main main sidebar"
+	
+	"footer footer footer";
+	grid-gap: 0.2rem;
+	font-family: "Inter", sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #004d40;
+	text-align: center;
+}
+
+nav {
+	background: #a7ffeb;
+	grid-area: nav;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
+}
+
+main {
+	background: #84ffff;
+	grid-area: main;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
+}
+
+#sidebar {
+	background: #18ffff;
+	grid-area: sidebar;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
+}
+
+footer {
+	background: #1de9b6;
+	grid-area: footer;
+	border-radius: var(--main-radius);
+	padding-top: var(--main-padding);
+}
