@@ -61,6 +61,7 @@ img {
 	height: 120px;
 	border-style: solid;
 	border-color: white;
+	align-content: center;
 }
 
 area:hover {
