@@ -31,8 +31,7 @@ nav {
 main {
 	background: #84ffff;
 	grid-area: main;
-	border-radius: var(--main-radius);
-	padding-top: var(--main-padding);
+
 }
 
 #sidebar {
@@ -49,12 +48,6 @@ footer {
 	padding-top: var(--main-padding);
 }
 
-img {
-	
-	border-radius: var(--main-radius);
-	
-}
-
 .material {
 	border-radius: 50%;
 	width: 120px;
@@ -64,6 +57,15 @@ img {
 	align-content: center;
 }
 
-area:hover {
-color:  red;
+
+polygon {
+	stroke:white;
+	stroke-width:1;
 }
+
+polygon:hover {
+	fill:lime;
+	stroke:purple;
+	stroke-width:1;
+}
+

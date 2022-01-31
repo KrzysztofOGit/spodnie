@@ -3,7 +3,7 @@ const imageMap = document.querySelector('svg');
 imageMap.addEventListener('click', materialChange);
 
 function materialChange(el) {
-	console.log(el.target )
+	console.log(el.target.id )
 	
 }
 
