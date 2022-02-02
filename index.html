@@ -9,6 +9,11 @@
 		<script src="script.js" defer></script>
   </head>
   <body>
+		<template id="tooltip">
+      <h2>More Info</h2>
+      <p></p>
+    </template>
+
 		<div class="container">
 			<nav>Navbar</nav>
 			<div id="sidebar">Material
@@ -16,20 +21,28 @@
 					<img class="material" src="./material/_DSC2979.png" alt="_DSC2979.png">
 					<img class="material" src="./material/_DSC2984.png" alt="_DSC2984.png">
 					<img class="material" src="./material/_DSC2986.png" alt="_DSC2986.png">
-				</div>
-				
+				</div>			
 			</div>
-
+			<!--  drawing trouser svg -->
 			<main class="trouser">
 				<svg  width="640px" height="900px" viewBox="0 100 640 850" xmlns="http://www.w3.org/2000/svg">
+					
+					<defs>
+ 						<pattern id="img1" height="100%" width="100%" patternContentUnits="objectBoundingBox" >
+  						<image height="1.1" width="2.3" xlink:href="./material/_DSC2979.png">
+ 						</pattern>
 
+						<pattern id="img2" height="100%" width="100%" patternContentUnits="objectBoundingBox" > <!--"objectBoundingBox"-->
+  						<image height="1" width="2.3" xlink:href="./material/_DSC2984.png">
+ 						</pattern>
+						
+					</defs>
 				
-					<polygon id="belt" points="130,120 130,150 460,150 460,120" />
-				
+					<polygon id="belt" points="130,120 130,150 460,150 460,120" fill="url(#img1)"/>
 
 					<polygon id="rightPocket" points="205,150 130,150 120,270 175,260" />
 					<polygon id="leftPocket"  points="460,150 390,150 410,260 470,270" />
-					<polygon id="frontRightOne" points="300,150 205,150 175,260 120,270 110,400 260,490 297,330" />
+					<polygon id="frontRightOne" points="300,150 205,150 175,260 120,270 110,400 260,490 297,330" fill="url(#img2)" />
 					<polygon id="frontLeftTwo" points="390,150 300,150 297,330 330,490 480,395 470,270 410,260" />
 					<polygon id="rightKnee" points="110,400 260,490 240,610 80,720" />
 					<polygon id="leftKnee" points="330,490 480,395 510,720 350,610" />
@@ -43,6 +56,27 @@
 					
 					Sorry, your browser does not support inline SVG.
 				</svg>
+
+<!-- Trigger/Open The Modal -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Please chose the material</h2>
+    </div>
+    <div class="modal-body">
+      <p>Material to choose...</p>
+			<img class="material" src="./material/_DSC2979.png" alt="_DSC2979.png">
+			<img class="material" src="./material/_DSC2984.png" alt="_DSC2984.png">
+			<img class="material" src="./material/_DSC2986.png" alt="_DSC2986.png">
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
 
 			</main>
 			<footer>Footer</footer>

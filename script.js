@@ -2,23 +2,34 @@ const imageMap = document.querySelector('svg');
 
 imageMap.addEventListener('click', materialChange);
 
+//chose color for the part fo the trouser
 function materialChange(el) {
 	console.log(el.target.id )
-	
 }
 
-/*
-function getNode(n, v) {
-  n = document.createElementNS("http://www.w3.org/2000/svg", n);
-  for (var p in v)
-    n.setAttributeNS(null, p.replace(/[A-Z]/g, function(m, p, o, s) { return "-" + m.toLowerCase(); }), v[p]);
-  return n
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btnSVG = document.querySelector('svg');
+//var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btnSVG.onclick = function() {
+  modal.style.display = "block";
 }
 
-var svg = getNode("svg");
-document.body.appendChild(svg);
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-var r = getNode('rect', { x: 131, y: 124, width: 461, height: 150, fill:'#ff00ff' });
-svg.appendChild(r);
-*/
-
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
