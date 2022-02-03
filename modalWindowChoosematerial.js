@@ -1,11 +1,26 @@
+let colorMaterialChosed;
+let partTrouserId; //wich one of the trouser was chosen
+
 // Get the modal
-var modal = document.getElementById("myModal");
+const modal = document.getElementById("myModal");
+
+//get a material from modal
+const colorMaterial = document.querySelector(".modal-body");
+//chose material for the trausers
+colorMaterial.addEventListener('click', choseColorMaterial);
+function choseColorMaterial(el) {
+ 	colorMaterialChosed = el.target.alt;
+	document.getElementById(partTrouserId).setAttribute('fill', `url(#${colorMaterialChosed.split('.')[0]})` ) ;
+	modal.style.display = "none";
+}
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+const span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-const openModalWindow = function() {
+const openModalWindow = function(el) {
+	partTrouserId = el.target.id;
+
   modal.style.display = "block";
 }
 

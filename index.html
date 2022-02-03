@@ -24,32 +24,36 @@
 				</div>			
 			</div>
 			<!--  drawing trouser svg -->
-			<main class="trouser">
+			<main>
 				<svg  width="640px" height="900px" viewBox="0 100 640 850" xmlns="http://www.w3.org/2000/svg">
 					
 					<defs>
- 						<pattern id="img1" height="100%" width="100%" patternContentUnits="objectBoundingBox" >
-  						<image height="1.1" width="2.3" xlink:href="./material/_DSC2979.png">
+ 						<pattern id="_DSC2979" height="100%" width="100%" patternContentUnits="objectBoundingBox" >
+  						<image height="1.1" width="2.1" xlink:href="./material/_DSC2979.png" alt="_DSC2979">
  						</pattern>
 
-						<pattern id="img2" height="100%" width="100%" patternContentUnits="objectBoundingBox" > <!--"objectBoundingBox"-->
-  						<image height="1" width="2.3" xlink:href="./material/_DSC2984.png">
+						<pattern id="_DSC2984" height="100%" width="100%" patternContentUnits="objectBoundingBox" > 
+  						<image height="1" width="2.3" xlink:href="./material/_DSC2984.png" alt="_DSC2984" >
  						</pattern>
+
+						<pattern id="_DSC2986" height="100%" width="100%" patternContentUnits="objectBoundingBox" > 
+  						<image height="1" width="2.3" xlink:href="./material/_DSC2986.png" alt="_DSC2986" >
+ 						</pattern>
+
 						
 					</defs>
 				
-					<polygon id="belt" points="130,120 130,150 460,150 460,120" fill="url(#img1)"/>
+					<polygon id="belt" points="130,120 130,150 460,150 460,120" fill=""/>
 
-					<polygon id="rightPocket" points="205,150 130,150 120,270 175,260" />
+					<polygon id="rightPocket" points="205,150 130,150 120,270 175,260" fill=""/>
 					<polygon id="leftPocket"  points="460,150 390,150 410,260 470,270" />
-					<polygon id="frontRightOne" points="300,150 205,150 175,260 120,270 110,400 260,490 297,330" fill="url(#img2)" />
-					<polygon id="frontLeftTwo" points="390,150 300,150 297,330 330,490 480,395 470,270 410,260" />
-					<polygon id="rightKnee" points="110,400 260,490 240,610 80,720" />
-					<polygon id="leftKnee" points="330,490 480,395 510,720 350,610" />
-					<polygon id="rightCalf" points="80,720 240,610 190,910 60,910" />
-					<polygon id="leftCalf" points="350,610 510,720 530,910 395,910" />
-					<polygon id="weltRigth" points="60,910 190,910 190,920 60,920" />
-					<polygon id="weltLeft" points="395,910 530,910 530,920 395,920" />
+					<polygon id="frontRightOne" points="300,150 205,150 175,260 120,270 110,400 260,490 297,330" fill="" />
+					<polygon id="frontLeftTwo" points="390,150 300,150 297,330 330,490 480,395 470,270 410,260" fill=""/>
+					<polygon id="rightKnee" points="110,400 260,490 240,610 80,720" fill=""/>
+					<polygon id="leftKnee" points="330,490 480,395 510,720 350,610" fill=""/>
+					<polygon id="rightCalf" points="80,720 240,610 190,910 60,910" fill=""/>
+					<polygon id="leftCalf" points="350,610 510,720 530,910 395,910" fill=""/>
+				
 					<!--
 						<polygon id="weltLeft" points="395,909 531,907 531,919 397,923" style="fill:lime;stroke:purple;stroke-width:5" />
 						-->
@@ -60,7 +64,6 @@
 <!-- Trigger/Open The Modal -->
 <!-- The Modal -->
 <div id="myModal" class="modal">
-
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-header">
@@ -69,9 +72,9 @@
     </div>
     <div class="modal-body">
       <p>Material to choose...</p>
-			<img class="material" src="./material/_DSC2979.png" alt="_DSC2979.png">
-			<img class="material" src="./material/_DSC2984.png" alt="_DSC2984.png">
-			<img class="material" src="./material/_DSC2986.png" alt="_DSC2986.png">
+				<img class="materialColor" src="./material/_DSC2979.png" alt="_DSC2979.png">
+				<img class="materialColor" src="./material/_DSC2984.png" alt="_DSC2984.png">
+				<img class="materialColor" src="./material/_DSC2986.png" alt="_DSC2986.png">
     </div>
     <div class="modal-footer">
       <h3>Modal Footer</h3>
@@ -81,5 +84,10 @@
 			</main>
 			<footer>Footer</footer>
 		</div>	
+
+
+
+
+
   </body>
 </html>
